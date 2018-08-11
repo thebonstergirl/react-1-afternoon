@@ -33,8 +33,9 @@ class EvenAndOdd extends Component {
     render () {
         return (
         <div> 
-            <h4> Evens and Odds </h4>
+            
        <div className="puzzleBox evenAndOddPB">
+       <h4> Evens and Odds </h4>
        <input className="inputLine" onChange={(e)=> this.inputHere(e.target.value)} />
        <button className="confirmationButton" onClick={() => this.solveMe(this.state.userInput)}>Split</button>
        <span className="resultsBox">Evens: {this.state.evenArray}</span>
